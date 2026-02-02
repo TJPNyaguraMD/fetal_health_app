@@ -16,7 +16,7 @@ st.set_page_config(
 )
 
 # API Configuration
-API_URL = "http://localhost:8000/health"
+API_URL = "https://fetal-health-app.onrender.com/"
 
 # Custom CSS for beautiful, simple interface
 st.markdown("""
