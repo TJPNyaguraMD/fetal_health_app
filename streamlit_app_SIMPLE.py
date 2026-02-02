@@ -16,7 +16,7 @@ st.set_page_config(
 )
 
 # API Configuration
-API_URL = "https://fetalhealthapplication.streamlit.app/"
+API_URL = "http://localhost:8000/health"
 
 # Custom CSS for beautiful, simple interface
 st.markdown("""
