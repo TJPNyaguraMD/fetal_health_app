@@ -23,12 +23,13 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://fetal-health-app.onrender.com",
-        "http://localhost:8000" # Useful for local testing
+        "https://fetal-health-app.onrender.com", # Main frontend
+        "https://tjnyaguramd.github.io",          # Your GitHub Pages domain
+        "http://localhost:8000"                  # Local testing
     ],
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["*"],                         # Allows POST, GET, etc.
+    allow_headers=["*"],                         # Allows Content-Type, etc.
 )
 
 
