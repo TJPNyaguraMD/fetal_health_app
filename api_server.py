@@ -22,10 +22,13 @@ app = FastAPI(
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://fetal-health-app.onrender.com/predict"],
+    allow_origins=[
+        "https://fetal-health-app.onrender.com",
+        "http://localhost:8000" # Useful for local testing
+    ],
     allow_credentials=True,
-    allow_methods=["https://fetal-health-app.onrender.com/predict"],
-    allow_headers=["https://fetal-health-app.onrender.com/predict"],
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
